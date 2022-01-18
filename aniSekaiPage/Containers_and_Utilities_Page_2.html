@@ -24,6 +24,23 @@
             opacity: 1.0;
             
         }
+
+        .body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode{
+          background-color: white;
+          color: black;
+      }
+    
     </style>
     <!--I arrenged the opacity rate because I want to make hover on my division to make them more attractive-->
 </head>
@@ -69,6 +86,25 @@
 
             </div>
             </div>
+
+            <div class=" container text-center">
+                <div class="row">
+        
+                   <div class="container mt-2">
+                    
+                        <button class="btn btn-dark"onclick="site_mode_dark()">Dark/Light Mode</button>
+            
+        
+                        <script>
+                            function site_mode_dark(){
+                            var element = document.body;
+                            element.classList.toggle("dark-mode");
+                        }
+                        </script>
+                    </div>
+                </div>
+            </div> 
+
 
             <!--thumbnail is used to put the picture in a window like bordered division-->
             <div class="col-md-4 mt-5 opaccc opaccc:hover">
